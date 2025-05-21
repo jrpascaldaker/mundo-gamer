@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de videojuegos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="portada-alt">
+        <div class="overlay">
+            <div class="texto-portada">
+                <h1>Mundo Gamer</h1>
+                <p>Sumérgete en el universo gamer</p>
+                <a href="#juegos" class="btn-entrar animar-boton">Entrar</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="juegos">
+        <h2 class="seccion-titulo"><i class="fas fa-gamepad"></i> Juegos destacados</h2>
+        <div class="contenedor-galeria">
+            <div class="galeria">
+            <div class="juego">
+                <img src="imagenes/dota_2.png" alt="Dota_2">
+                <h3>Dota 2</h3>
+            </div>
+            <div class="juego">
+                <img src="imagenes/starcraft_2.png" alt="Starcraft_2">
+                <h3>Starcraft 2</h3>
+            </div>
+            <div class="juego">
+                <img src="imagenes/Assassin’s_Creed.png" alt="assasins_creed">
+                <h3>Assassin’s Creed</h3>
+            </div>
+            <div class="juego">
+                <img src="imagenes/fornite.png" alt="fornite">
+                <h3>Fortnite</h3>
+            </div>
+            <div class="juego">
+                <img src="imagenes/minecraft.png" alt="minecraft">
+                <h3>Minecraft</h3>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="noticias">
+        <h2 class="seccion-titulo"><i class="fas fa-newspaper"></i> Noticias y curiosidades</h2>
+        <div class="noticias"></div>
+    </section>
+
+
+    <section id="contacto">
+        <h2 class="seccion-titulo"><i class="fas fa-envelope"></i> Contáctanos</h2>
+        <form action="https://formspree.io/f/xovdboal" method="POST">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu email" required>
+            <textarea name="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section id="detalle-juego" class="detalle-juego oculto">
+    <div class="contenido-detalle">
+        <span id="cerrar-detalle" class="cerrar-detalle">&times;</span>
+        <img id="imagen-detalle" src="" alt="Imagen juego grande">
+        <div id="descripcion-detalle"></div>
+    </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mundo Gamer</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
